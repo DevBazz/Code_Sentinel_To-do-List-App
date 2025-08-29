@@ -1,0 +1,126 @@
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Poppins", sans-serif;
+      background: #0f0f17;
+      color: #f1f1f1;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .todo-container {
+      background: #1e1e2e;
+      padding: 2rem;
+      border-radius: 1rem;
+      width: 100%;
+      max-width: 420px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 1rem;
+      color: #f8f8f8;
+    }
+
+    .input-section {
+      display: flex;
+      gap: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .input-section input {
+      flex: 1;
+      padding: 0.8rem;
+      border: 2px solid #333;
+      background: #2a2a3d;
+      border-radius: 0.5rem;
+      font-size: 1rem;
+      color: #fff;
+      outline: none;
+      transition: 0.3s;
+    }
+
+    .input-section input:focus {
+      border-color: #7f5af0;
+    }
+
+    .input-section button {
+      padding: 0.8rem 1.2rem;
+      background: #7f5af0;
+      color: #fff;
+      border: none;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .input-section button:hover {
+      background: #6246ea;
+    }
+
+    ul {
+      list-style: none;
+      max-height: 320px;
+      overflow-y: auto;
+      padding-right: 5px;
+    }
+
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.7rem;
+      border-bottom: 1px solid #333;
+      transition: 0.3s;
+    }
+
+    li.completed span {
+      text-decoration: line-through;
+      color: #777;
+    }
+
+    .task-actions {
+      display: flex;
+      gap: 0.5rem;
+    }
+
+    .task-actions button {
+      border: none;
+      background: none;
+      cursor: pointer;
+      font-size: 1.1rem;
+      transition: 0.2s;
+      color: #aaa;
+    }
+
+    .task-actions button:hover {
+      transform: scale(1.2);
+      color: #fff;
+    }
+
+    .clear-btn {
+      margin-top: 1rem;
+      width: 100%;
+      padding: 0.7rem;
+      background: crimson;
+      color: #fff;
+      border: none;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .clear-btn:hover {
+      background: darkred;
+    }
+  
